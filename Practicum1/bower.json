@@ -1,0 +1,23 @@
+{
+  "name": "WT-Practicum1",
+  "homepage": "https://github.com/TomHoekstra/Webtechnologie",
+  "authors": [
+    "Tom Hoekstra t.m.hoekstra@students.uu.nl"
+  ],
+  "description": "Practicum 1 for Webtechnologie (INFO2WT)",
+  "main": "",
+  "keywords": [
+    "INFO2WT",
+    "UU",
+    "INKU"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
