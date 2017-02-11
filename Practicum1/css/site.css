@@ -1,0 +1,43 @@
+/* Blue = 	#02529C, RED= 	#DC1E35 */
+
+html, body {
+    font-size: 0.813rem;
+    font: Verdana;
+    color: #666;
+    background-color: #02529C;
+}
+
+.navbar {
+    background-color: #DC1E35;
+}
+
+.navbar-brand{
+    border: 0px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+.panel-header{
+    border-bottom: 1px solid #DC1E35;
+    padding: 0px 15px;
+}
+
+h1{
+   font-size: 2.308rem;
+   color: #DC1E35;
+}
+
+h2{
+    margin-top: 0px;
+    font-size: 1.538rem;
+    color: #02529C;
+}
+
+
+a{
+  border: 1px solid #fff;
+     color: #fff !important
+}

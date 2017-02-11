@@ -1,1 +1,45 @@
-Test
+<html ng-app="gylfiApp">
+
+<head>
+
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+
+    <link rel="stylesheet" href="./css/site.css"/>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    
+    <script src="./scripts/app.js"></script>
+
+</head>
+
+<body ng-controller="gylfiController">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#home">Gylfi Sigurdsson</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#swansea"><i class="fa fa-shield"></i>Swansea</a></li>
+                    <li><a href="#iceland"><i class="fa fa-comment"></i>Icelandic team</a></li>
+                    <li><a href="#stats"><i class="fa fa-comment"></i>Stats of Gylfi</a></li>
+                    <li><a href="#bestof"><i class="fa fa-comment"></i>Best of Gylfi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+
+    <div ng-view=""></div>
+    <div>
+
+
+    </div>
+
+</body>
+
+</html>
