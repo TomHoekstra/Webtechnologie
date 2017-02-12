@@ -1,45 +1,64 @@
-<html ng-app="gylfiApp">
+<!DOCTYPE html>
+<html>
 
 <head>
-
+    <title>Gylfi</title>
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    
+    <link rel="stylesheet" href="./bower_components/components-font-awesome/css/font-awesome.css" />
+
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
     <script src="./bower_components/angular/angular.js"></script>
     <script src="./bower_components/angular-route/angular-route.js"></script>
 
-    <link rel="stylesheet" href="./css/site.css"/>
+
+
+    <link rel="stylesheet" href="./css/site.css" />
     <link rel="shortcut icon" href="./images/favicon.png">
-    
+
     <script src="./scripts/app.js"></script>
 
 </head>
 
-<body ng-controller="gylfiController">
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#home">Gylfi Sigurdsson</a>
-                </div>
+<body  data-ng-app="gylfiApp">
+    <div class="container"  data-ng-controller="gylfiController">
+        <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-12 col-12">
+            <header>
+                <nav class="navbar navbar-default">
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
-                    <li><a href="#swansea"><i class="fa fa-shield"></i>Swansea</a></li>
-                    <li><a href="#iceland"><i class="fa fa-comment"></i>Icelandic team</a></li>
-                    <li><a href="#stats"><i class="fa fa-comment"></i>Stats of Gylfi</a></li>
-                    <li><a href="#bestof"><i class="fa fa-comment"></i>Best of Gylfi</a></li>
-                </ul>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#home">Gylfi Sigurdsson  <img src="./images/gylfi_portrait.jpg" alt="Gylfi"/></a>
+
+                    </div>
+
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#swansea">Swansea</a></li>
+                        <li><a href="#iceland">Icelandic team</a></li>
+                        <li><a href="#stats">Stats of Gylfi</a></li>
+                        <li><a href="#bestof">Best of Gylfi</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div id="main">
+
+                <div data-ng-view></div>
+
+
+
             </div>
-        </nav>
-    </header>
-    <div id="main">
 
-    <div ng-view=""></div>
-    <div>
-
+             <footer>
+               
+                <a href="https://twitter.com/22gylfi" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://www.facebook.com/gylfisigurdssonfans" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/gylfisig23" target="_blank"><i class="fa fa-instagram"></i> instagram</a>
+                <a href="http://www.swanseacity.net/" target="_blank"><i class="fa fa-futbol-o"></i> Swansea</a>
+                <a href="http://www.ksi.is/english" target="_blank"><i class="fa fa-futbol-o"></i> KSI</a>
+            </footer>
+        </div>
 
     </div>
-
 </body>
 
 </html>
