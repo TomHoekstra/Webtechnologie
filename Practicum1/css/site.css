@@ -16,6 +16,11 @@ h2{
     color: #02529C;
 }
 
+h3{
+    font-size: 1.231em;
+    color: #DC1E35;
+}
+
 p{
     font-size: 1rem;
 }
@@ -104,4 +109,10 @@ table tr:last-of-type {
     width: 640px;
     height: 430px;
     margin-top: -30px;
+}
+
+.logo{
+    float: right;
+    width: 30px;
+    height: 30px;
 }
