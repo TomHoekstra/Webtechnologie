@@ -28,6 +28,7 @@ p{
 .p-source a{
     color: #333;
     font-style: italic;
+    text-decoration: underline;
 }
 
 .container{

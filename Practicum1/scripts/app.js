@@ -15,6 +15,4 @@ angular.module('gylfiApp', ['ngRoute']).config(function ($routeProvider, $locati
         .when('/bestof', {
             templateUrl: 'pages/bestof.html',
         })
-}).controller('gylfiController', function ($scope) {
-
 });
