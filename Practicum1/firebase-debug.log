@@ -3,10 +3,13 @@
 [debug] CLI Version:  3.2.1
 [debug] Platform:     win32
 [debug] Node Version: v6.9.4
-[debug] Time:         Sun Feb 12 2017 18:39:32 GMT+0100 (W. Europe Standard Time)
+[debug] Time:         Sun Feb 12 2017 19:08:12 GMT+0100 (W. Europe Standard Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
+[debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/wt-practicum1 
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/wt-practicum1/tokens 
@@ -17,4 +20,4 @@
 [info] i  deploying database, hosting
 [info] +  database: rules ready to deploy.
 [info] i  hosting: preparing  directory for upload...
-[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/wt-practicum1/uploads/-KcnP7hJ5pDGdgv0G915?fileCount=335&message= 
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/wt-practicum1/uploads/-KcnVgVGzocnLCkTmmTB?fileCount=341&message= 
