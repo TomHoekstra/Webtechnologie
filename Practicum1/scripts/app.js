@@ -1,9 +1,10 @@
 angular.module('gylfiApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('');
     $routeProvider
-        .when('/', {
-            templateUrl: 'pages/iceland.html',
+        .when('/home', {
+            templateUrl: 'pages/home.html',
         })
-        .when('swansea', {
+        .when('/swansea', {
             templateUrl: 'pages/swansea.html',
         })
         .when('/iceland', {
@@ -15,4 +16,7 @@ angular.module('gylfiApp', ['ngRoute']).config(function ($routeProvider, $locati
         .when('/bestof', {
             templateUrl: 'pages/bestof.html',
         })
+        .otherwise({
+            redirectTo: '/home'
+        });
 });
