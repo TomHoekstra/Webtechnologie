@@ -1,4 +1,4 @@
-angular.module('gylfiApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
+angular.module('gylfiApp', ['ngRoute', 'ui.bootstrap']).config(function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
     $routeProvider
         .when('/home', {

@@ -94,14 +94,8 @@ table tr:last-of-type {
 }
 
 .carousel-img{
-    max-width: 225px;
-    max-height: 225px;
+    max-height: 300px;
 }
-
-.carousel-inner > .item > img {
-    margin: 0 auto;
-}
-
 video{
     width: 100%;
     height: auto;
