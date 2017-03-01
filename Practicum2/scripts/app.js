@@ -19,6 +19,9 @@ angular.module('gylfiApp', ['ngRoute', 'ui.bootstrap']).config(function ($routeP
         .when('/map', {
             templateUrl: 'pages/map.html'
         })
+        .when('/messages', {
+            templateUrl: 'pages/messages.html'
+        })
         .otherwise({
             redirectTo: '/home'
         });

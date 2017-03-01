@@ -4,7 +4,6 @@ angular.module('gylfiApp').controller('mapController', [function () {
 
     this.europeanLabels = 'GYLFI'
 
-
     this.initialize = function () {
         this.map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: 45.777222, lng: 3.087025 },
