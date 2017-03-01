@@ -1,0 +1,40 @@
+<script src="/bower_components/bootstrap/js/carousel.js"></script>
+
+<div class="panel panel-default">
+    <div class="panel-header">
+        <h1>Welcome</h1>
+    </div>
+    <div class="panel-body">
+        <section>
+            <h2>About Gylfi</h2>
+            <article>
+                <p>
+                    Gylfi Þór Sigurðsson (Icelandic pronunciation: ​[ˈcɪlvɪ ˈθou:r̥ ˈsɪ:ɣʏrðsɔn]; born 8 September 1989) is an Icelandic professional
+                    footballer who plays as a midfielder for Premier League club Swansea City. He is a specialist on set-pieces
+                    and possesses great long-range shooting ability.
+                </p>
+
+                <p>
+                    He began his professional career with Reading in the Championship, and in 2010 was sold to Hoffenheim in Reading's biggest
+                    sale. He was voted Player of the Season for two consecutive seasons — for Reading in 2009–10 and for
+                    Hoffenheim in 2010–11. After a season back in English football with Swansea he joined Tottenham Hotspur
+                    for £8.8 million, and in 2014 moved back to Swansea as part of an exchange for Ben Davies.
+                </p>
+
+                <p>
+                    Gylfi made his senior international debut for Iceland in 2010 and has since earned over 40 caps. He represented Iceland at
+                    their first major tournament, UEFA Euro 2016, where the Nordic country reached the quarter-final.
+                </p>
+
+                <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
+            </article>
+
+            <h2>Our hero</h2>
+                <div class="" uib-carousel active="active" interval="3000" no-wrap="noWrapSlides">
+                    <div uib-slide ng-repeat="image in ctrl.images track by image.index" index="$index">
+                        <img class="carousel-img" ng-src="{{image.src}}" style="margin:auto;">
+                    </div>
+                </div>
+        </section>
+        </div>
+    </div>
