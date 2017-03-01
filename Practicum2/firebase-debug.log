@@ -1,0 +1,13 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files (x86)\nodejs\node.exe C:\Users\Gylfi\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.4.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.4
+[debug] Time:         Wed Mar 01 2017 20:40:02 GMT+0100 (W. Europe Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\Gylfi\Google Drive\Webtechnologie\Practicum2
+[info] 
+[info] Server listening at: http://localhost:5000

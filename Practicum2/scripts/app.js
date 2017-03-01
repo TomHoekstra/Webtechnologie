@@ -2,7 +2,7 @@ angular.module('gylfiApp', ['ngRoute', 'ui.bootstrap']).config(function ($routeP
     $locationProvider.hashPrefix('');
     $routeProvider
         .when('/home', {
-            templateUrl: 'pages/home.html'              
+            templateUrl: 'pages/home.html'
         })
         .when('/swansea', {
             templateUrl: 'pages/swansea.html'

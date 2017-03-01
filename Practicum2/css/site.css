@@ -110,3 +110,7 @@ video{
 .well{
     margin-top: 10px;
 }
+
+#map{
+    height: 100%;
+}
