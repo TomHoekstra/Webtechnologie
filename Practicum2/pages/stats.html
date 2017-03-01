@@ -1,110 +1,112 @@
-<h1>Gylfi and his statistics</h1>
+<div data-ng-controller="statsController as ctrl">
+    <h1>Gylfi and his statistics</h1>
 
-<div class="btn-group" role="group" >
-  <button type="button" class="btn btn-default" data-ng-class="{'btn-primary': ctrl.stats == 'club'}" data-ng-click="ctrl.stats = 'club'">Club</button>
-  <button type="button" class="btn btn-default" data-ng-class="{'btn-primary': ctrl.stats == 'iceland'}" data-ng-click="ctrl.stats = 'iceland'">Iceland</button>
-</div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" data-ng-class="{'btn-primary': ctrl.stats == 'club'}" data-ng-click="ctrl.stats = 'club'">Club</button>
+        <button type="button" class="btn btn-default" data-ng-class="{'btn-primary': ctrl.stats == 'iceland'}" data-ng-click="ctrl.stats = 'iceland'">Iceland</button>
+    </div>
 
-<div class="well" data-ng-if="ctrl.stats == 'club'">
+    <div class="well" data-ng-if="ctrl.stats == 'club'">
 
 
-    <section>
+        <section>
 
-        <h2>Club</h2>
+            <h2>Club</h2>
 
-        <table class="table table-responsive">
-            <thead>
-                <tr class="header-row">
-                    <td>Club</td>
-                    <td>Appearances</td>
-                    <td>Goals</td>
+            <table class="table table-responsive">
+                <thead>
+                    <tr class="header-row">
+                        <td>Club</td>
+                        <td>Appearances</td>
+                        <td>Goals</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Reading</td>
+                    <td>42</td>
+                    <td>18</td>
                 </tr>
-            </thead>
-            <tr>
-                <td>Reading</td>
-                <td>42</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>1899 Hoffenheim</td>
-                <td>36</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>Tottenham Hotspur</td>
-                <td>58</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Swansea</td>
-                <td>106</td>
-                <td>32</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>262</td>
-                <td>71</td>
-            </tr>
-
-        </table>
-
-        <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
-    </section>
-</div>
-<div class="well" data-ng-if="ctrl.stats == 'iceland'">
-    <section>
-        <h2>Iceland national team</h2>
-        <table class="table">
-            <thead>
-                <tr class="header-row">
-                    <td>Year</td>
-                    <td>Appearances</td>
-                    <td>Goals</td>
+                <tr>
+                    <td>1899 Hoffenheim</td>
+                    <td>36</td>
+                    <td>9</td>
                 </tr>
-            </thead>
-            <tr>
-                <td>2010</td>
-                <td>3</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>2011</td>
-                <td>3</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2012</td>
-                <td>8</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2013</td>
-                <td>8</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>2014</td>
-                <td>6</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>2015</td>
-                <td>7</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>2016</td>
-                <td>13</td>
-                <td>2</td>
-            </tr>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>48</td>
-                <td>14</td>
-            </tr>
-        </table>
+                <tr>
+                    <td>Tottenham Hotspur</td>
+                    <td>58</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Swansea</td>
+                    <td>106</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>262</td>
+                    <td>71</td>
+                </tr>
 
-        <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
-    </section>
+            </table>
+
+            <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
+        </section>
+    </div>
+    <div class="well" data-ng-if="ctrl.stats == 'iceland'">
+        <section>
+            <h2>Iceland national team</h2>
+            <table class="table">
+                <thead>
+                    <tr class="header-row">
+                        <td>Year</td>
+                        <td>Appearances</td>
+                        <td>Goals</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>2010</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>8</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>8</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>6</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>13</td>
+                    <td>2</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>48</td>
+                    <td>14</td>
+                </tr>
+            </table>
+
+            <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
+        </section>
+    </div>
 </div>
