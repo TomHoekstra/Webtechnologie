@@ -56,6 +56,12 @@ header a{
     color: #fff !important
 }
 
+header a:last-child{
+    border: 0px;
+    border-right: 1px solid #fff;
+    color: #fff !important
+}
+
 .panel {
     border:  1px solid #DC1E35;
 }
