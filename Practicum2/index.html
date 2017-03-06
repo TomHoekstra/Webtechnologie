@@ -27,6 +27,9 @@
     <script src="/scripts/statsController.js"></script>
     <script src="/scripts/mapController.js"></script>
     <script src="/scripts/messagesController.js"></script>
+    
+    <link rel="stylesheet" href="/contextmenu/contextmenu.css"></script>
+    <script src="/contextmenu/contextmenu.js"></script>
 </head>
 
 <body data-ng-app="gylfiApp">
@@ -75,9 +78,8 @@
         </div>
 
     </div>
-
-    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
-
+    <div ng-include="'contextmenu/contextmenu.html'"></div>
+    <script src='//maps.googleapis.com/maps/api/js'></script>
     <script src="scripts/markers/markerclusterer.js"></script>
 </body>
 
