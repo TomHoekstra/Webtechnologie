@@ -10,29 +10,32 @@ $(document).on("contextmenu", "body", function (e) {
 
 $(document).bind("mousedown", function (e) {
 
-    // If the clicked element is not the menu
-    if (!$(e.target).parents(".contextmenu").length > 0) {
+    if (!$(e.target).parents(".contextmenu").length == 0) {
 
-        // Hide it
-        $(".contextmenu").hide(100);
+        if (e.button == 0) {
+            switch ($(e.target)[0].id) {
+                case "normal":
+                    $("body").css("font-weight", "normal");
+                    $("body").css("font-style", "normal");
+                    break;
+                case "bold":
+                    $("body").css("font-weight", "bold");
+                    $("body").css("font-style", "normal");
+                    break;
+                case "italic":
+                    $("body").css("font-style", "italic");
+                    $("body").css("font-weight", "normal");
+                    break;
+            }
+        }
+        else {
+            return;
+        }
+
     }
-});
 
-
-// If the menu element is clicked
-$(".contextmenu li").click(function () {
-
-    // This is the triggered action name
-    switch ($(this).attr("data-action")) {
-
-        // A case for each action. Your actions here
-        case "first": alert("first"); break;
-        case "second": alert("second"); break;
-        case "third": alert("third"); break;
-    }
-
-    // Hide it AFTER the action was triggered
     $(".contextmenu").hide(100);
 });
+
 
 
