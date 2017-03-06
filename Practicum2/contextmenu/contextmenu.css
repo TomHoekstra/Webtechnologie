@@ -9,7 +9,17 @@
     color: #fff;
     font-size: 1.231rem;
     border-radius: 5px;
+}
+
+.contextmenu h4{
+    padding: 10px;
+    margin: 0px;
+    background-color: #DC1E35
+}
+
+.contextlist{
     padding: 0;
+    margin: 0;
 }
 
 .contextmenu li {
