@@ -4,49 +4,49 @@
             "lat": 45.4607318,
             "lng": 4.390116199999966
         },
-        "label": "G",
         "title": "Portugal 1 - 1 Iceland",
         "clickable": true,
-        "visible": true
+        "visible": true,
+        "icon" : "../images/markers/flags/portugal.png"
     },
     {
         "position": {
             "lat": 43.269827,
             "lng": 5.395887300000027
         },
-        "label": "Y",
         "title": "Iceland 1 - 1 Hungary",
         "clickable": true,
-        "visible": true
+        "visible": true,
+        "icon" : "../images/markers/flags/hungary.png"
     },
     {
         "position": {
             "lat": 48.936181,
             "lng": 2.457443000000012
         },
-        "label": "L",
         "title": "Iceland 2 - 1 Austria",
         "clickable": true,
-        "visible": true
+        "visible": true,
+        "icon" : "../images/markers/flags/austria.png"
     },
     {
         "position": {
             "lat": 43.7050594,
             "lng": 7.192585000000008
         },
-        "label": "F",
         "title": "England 1 - 2 Iceland",
         "clickable": true,
-        "visible": true
+        "visible": true,
+        "icon" : "../images/markers/flags/england.png"
     },
     {
         "position": {
             "lat": 48.936181,
             "lng": 2.3574429999999893
         },
-        "label": "I",
         "title": "France 5 - 2 Iceland",
         "clickable": true,
-        "visible": true
+        "visible": true,
+        "icon" : "../images/markers/flags/france.png"
     }
 ]

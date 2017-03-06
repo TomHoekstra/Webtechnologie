@@ -25,7 +25,8 @@ angular.module('gylfiApp').controller('mapController', ['$window', function ($wi
                     _this.markers.push(new google.maps.Marker({
                         position: data.position,
                         label: data.label,
-                        title: data.title
+                        title: data.title,
+                        icon: data.icon,
                     }));
                 });
             }
