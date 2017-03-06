@@ -1,18 +1,12 @@
 <div data-ng-controller="statsController as ctrl">
     <h1>Gylfi and his statistics</h1>
-
     <div class="btn-group" role="group">
         <button type="button" class="btn btn-default" data-ng-class="{'btn-primary': ctrl.stats == 'club'}" data-ng-click="ctrl.stats = 'club'">Club</button>
         <button type="button" class="btn btn-default" data-ng-class="{'btn-primary': ctrl.stats == 'iceland'}" data-ng-click="ctrl.stats = 'iceland'">Iceland</button>
     </div>
-
     <div class="well" data-ng-if="ctrl.stats == 'club'">
-
-
         <section>
-
             <h2>Club</h2>
-
             <table class="table table-responsive">
                 <thead>
                     <tr class="header-row">
@@ -46,9 +40,7 @@
                     <td>262</td>
                     <td>71</td>
                 </tr>
-
             </table>
-
             <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
         </section>
     </div>
@@ -105,7 +97,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
         </section>
     </div>

@@ -11,7 +11,6 @@ $(document).on("contextmenu", "body", function (e) {
 $(document).bind("mousedown", function (e) {
 
     if (!$(e.target).parents(".contextmenu").length == 0) {
-
         if (e.button == 0) {
             switch ($(e.target)[0].id) {
                 case "normal_font":
