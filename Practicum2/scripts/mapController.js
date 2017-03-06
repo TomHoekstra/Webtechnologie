@@ -1,10 +1,10 @@
-angular.module('gylfiApp').controller('mapController', [function () {
-    this.map;
+angular.module('gylfiApp').controller('mapController', ['$window', function ($window) {
+    $window.map;
     this.markers = [];
     var _this = this;
 
-    this.initialize = function () {
-        this.map = new google.maps.Map(document.getElementById('map'), {
+    $window.initialize = function () {
+        $window.map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: 45.777222, lng: 3.087025 },
             zoom: 4,
         });
@@ -31,10 +31,6 @@ angular.module('gylfiApp').controller('mapController', [function () {
             }
         });
     };
-
-    google.maps.event.addDomListener(window, 'load', this.initialize);
-    //Fix for not loading first time
-    $(document).bind("projectLoadComplete", this.initialize);
 }]);
 
 
