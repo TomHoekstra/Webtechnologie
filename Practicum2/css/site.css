@@ -123,3 +123,24 @@ video{
 .hover-pointer{
     cursor: pointer;
 }
+
+#flotgraph{
+    width: 100%;
+    min-height: 480px;
+}
+
+#flotgraph table tr{
+    background: #fff;
+    color: #000;
+}
+
+#flotcheckbox div{
+    display: inline-block;
+    margin-left: 40px;
+    width: 100px;
+}
+
+#flotcheckbox div label {
+    display: block;
+}
+

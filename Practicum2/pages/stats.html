@@ -100,4 +100,18 @@
             <p class="p-source"><a href="https://en.wikipedia.org/wiki/Gylfi_Sigur%C3%B0sson" target="_blank">Source: Wikipedia</a></p>
         </section>
     </div>
+    <div class="well">
+        <section>
+            <h2>Graph!</h2>
+            <div id="flotgraph"></div>
+            <div id="flotcheckbox">
+                <div ng-repeat="data in ctrl.flotData">
+                    <label class="checkbox" for="{{data.label}}">
+                        <input type="checkbox" ng-model="data.selected" id="{{data.label}}" ng-change="ctrl.reflot()"  />
+                        {{data.label}}
+                    </label>
+                </div>
+            </div>
+        </section>
+    </div>
 </div>
