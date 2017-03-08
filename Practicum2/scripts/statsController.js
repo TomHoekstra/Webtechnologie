@@ -5,18 +5,6 @@ angular.module('gylfiApp').controller('statsController', [function () {
   this.options;
   _this = this;
 
-  // this.options = {
-  //   xaxis:
-  //   {
-  //     min: 2008, max: 2016, tickSize: 1, tickDecimals: 0
-  //   },
-  //   yaxis:
-  //   {
-  //     min: 0, max: 40, tickSize: 5, tickDecimals: 0
-  //   }
-  // }
-  
-
   this.getJSON = function (file) {
     $.ajax({
       url: '../sources/' + file,
