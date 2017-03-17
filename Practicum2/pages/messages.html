@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gylfi Sigurdsson fans</title>
+    <meta name="keywords" content="Gylfi Sigurdsson, Football, Iceland, Swansea, Icelandic Football">
+    <meta name="description" content="This is the official website of the Gylfi Sigurdssons Dutch fan club!">
+    <meta charset="UTF-8">
+</head>
+
 <div class="row" data-ng-controller="messagesController as ctrl">
 
     <div class="col-md-6 col-sd-12">
@@ -6,9 +16,9 @@
                 <h1>Recent messages</h1>
             </div>
             <div class="panel-body">
-                <p ng-click="ctrl.reverse()" class="hover-pointer pull-right">Toggle sort
+                <p data-ng-click="ctrl.reverse()" class="hover-pointer pull-right">Toggle sort
                 </p>
-                <div ng-repeat="message in ctrl.messages track by $index">
+                <div data-ng-repeat="message in ctrl.messages track by $index">
                     <h2>{{message.email}} - {{message.date}} {{message.time}}</h2>
                     <p>{{message.message}}</p>
                 </div>
@@ -21,22 +31,22 @@
                 <h1>Submit a message!</h1>
             </div>
             <div class="panel-body">
-                <form name="message_form" novalidate ng-submit="message_form.$valid && ctrl.submit()">
+                <form name="message_form" novalidate data-ng-submit="message_form.$valid && ctrl.submit()">
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input ng-model="ctrl.message.email" type="email" class="form-control" name="email" id="email" placeholder="Voer email in"
+                        <input data-ng-model="ctrl.message.email" type="email" class="form-control" name="email" id="email" placeholder="Voer email in"
                             required>
-                        <small id="emailHelp" class="form-text text-muted">Je mailadres is je gebruikersnaam</small>
-                        <div ng-show="message_form.$submitted || message_form.email.$touched">
-                            <span ng-show="message_form.email.$error.required">Tell us your email.</span>
-                            <span ng-show="message_form.email.$error.email">This is not a valid email.</span>
+                        <small id="emailHelp" class="form-text text-muted">Your mail is your username</small>
+                        <div class="error-message" data-ng-show="message_form.$submitted || message_form.email.$touched">
+                            <span data-ng-show="message_form.email.$error.required">Tell us your email.</span>
+                            <span data-ng-show="message_form.email.$error.email">This is not a valid email.</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea ng-model="ctrl.message.message" class="form-control" name="message" id="message" rows="7" required></textarea>
-                        <div ng-show="message_form.$submitted || message_form.message.$touched">
-                            <span ng-show="message_form.message.$error.required">Tell us your message.</span>
+                        <textarea data-ng-model="ctrl.message.message" class="form-control" name="message" id="message" rows="7" required></textarea>
+                        <div class="error-message" data-ng-show="message_form.$submitted || message_form.message.$touched">
+                            <span data-ng-show="message_form.message.$error.required">Tell us your message.</span>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -45,3 +55,5 @@
         </div>
     </div>
 </div>
+
+</html>

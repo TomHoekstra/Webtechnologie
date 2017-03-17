@@ -1,4 +1,12 @@
-<script src="/bower_components/Flot/jquery.flot.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gylfi Sigurdsson fans</title>
+    <meta name="keywords" content="Gylfi Sigurdsson, Football, Iceland, Swansea, Icelandic Football">
+    <meta name="description" content="This is the official website of the Gylfi Sigurdssons Dutch fan club!">
+    <meta charset="UTF-8">
+    <script src="/bower_components/Flot/jquery.flot.js"></script>
+</head>
 
 <div data-ng-controller="statsController as ctrl">
     <h1>Gylfi and his statistics</h1>
@@ -92,7 +100,6 @@
                     <td>13</td>
                     <td>2</td>
                 </tr>
-                </tr>
                 <tr>
                     <td>Total</td>
                     <td>48</td>
@@ -107,9 +114,9 @@
             <h2>Graph!</h2>
             <div id="flotgraph"></div>
             <div id="flotcheckbox">
-                <div ng-repeat="data in ctrl.flotData">
+                <div data-ng-repeat="data in ctrl.flotData">
                     <label class="checkbox" for="{{data.label}}">
-                        <input type="checkbox" ng-model="data.selected" id="{{data.label}}" ng-change="ctrl.reflot()"  />
+                        <input type="checkbox" data-ng-model="data.selected" id="{{data.label}}" data-ng-change="ctrl.reflot()"  />
                         {{data.label}}
                     </label>
                 </div>
@@ -117,3 +124,4 @@
         </section>
     </div>
 </div>
+</html>

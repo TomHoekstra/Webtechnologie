@@ -11,6 +11,12 @@
     border-radius: 5px;
 }
 
+.contextmenu h3{
+    padding: 10px;
+    margin: 0px;
+    background-color: #fff;
+}
+
 .contextmenu h4{
     padding: 10px;
     margin: 0px;
@@ -27,7 +33,7 @@
     cursor: pointer;
     list-style-type: none;
     transition: all .3s ease;
-    border-bottom: 1px solid #DC1E35;
+    border: 1px solid #DC1E35;
 }
 
 .contextmenu li#bold {
@@ -41,3 +47,5 @@
 .contextmenu li:hover {
     background-color: #DC1E35;
 }
+
+
